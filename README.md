@@ -8,14 +8,14 @@
 This repo is a PyTorch implementation of the paper [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125).
 
 ### Installation
-```
+```bash
 pip install multilingual-translation
 ```
 ### Usage
-```
+```python
 from multilingual_translation import translate
 
-translate("facebook/m2m100_418M", "Hello World", "en", "tr")
+translate("facebook/m2m100_418M", "Hello World", "en", "tr") # Merhaba Dünya
 ```
 ### Citation
 ```bibtex
