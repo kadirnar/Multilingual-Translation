@@ -1,12 +1,9 @@
-<div align="center">
 <h2>
   Beyond English-Centric Multilingual Machine Translation
 </h2>
-<div>
-    <a href="https://badge.fury.io/py/multilingual_translation"><img src="https://badge.fury.io/py/multilingual_translation.svg" alt="pypi version"></a>
-    <a href="https://huggingface.co/spaces/kadirnar/multilingual_translation"><img src="https://img.shields.io/badge/%20HuggingFace%20-Demo-blue.svg" alt="HuggingFace Spaces"></a>
-</div>
-</div>
+
+<a href="https://badge.fury.io/py/multilingual_translation"><img src="https://badge.fury.io/py/multilingual_translation.svg" alt="pypi version"></a>
+<a href="https://huggingface.co/spaces/kadirnar/multilingual_translation"><img src="https://img.shields.io/badge/%20HuggingFace%20-Demo-blue.svg" alt="HuggingFace Spaces"></a>
 
 This repo is a PyTorch implementation of the paper [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125).
 
