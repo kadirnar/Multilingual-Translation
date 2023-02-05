@@ -1,6 +1,6 @@
 <div align="center">
 <h2>
-  Multilingual Translation: Beyond English-Centric Multilingual Machine Translation
+  Beyond English-Centric Multilingual Machine Translation
 </h2>
 <div>
     <a href="https://badge.fury.io/py/multilingual_translation"><img src="https://badge.fury.io/py/multilingual_translation.svg" alt="pypi version"></a>
