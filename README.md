@@ -2,18 +2,14 @@
 <h2>
   Multilingual Translation: Beyond English-Centric Multilingual Machine Translation
 </h2>
-<h4>
-    <img width="400" alt="teaser" src="docs/results.png">
-</h4>
 <div>
-    <a href="https://pepy.tech/project/multilingual_translation"><img src="https://pepy.tech/badge/multilingual_translation" alt="downloads"></a>
     <a href="https://badge.fury.io/py/multilingual_translation"><img src="https://badge.fury.io/py/multilingual_translation.svg" alt="pypi version"></a>
     <a href="https://huggingface.co/spaces/kadirnar/multilingual_translation"><img src="https://img.shields.io/badge/%20HuggingFace%20-Demo-blue.svg" alt="HuggingFace Spaces"></a>
 </div>
 </div>
-## <div align="center">Overview</div>
 
-This repo is a packaged version of the [BSRGAN](https://github.com/cszn/BSRGAN) model.
+This repo is a PyTorch implementation of the paper [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125).
+
 ### Installation
 ```
 pip install multilingual-translation
