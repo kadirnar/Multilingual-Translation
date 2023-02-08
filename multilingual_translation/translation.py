@@ -1,18 +1,26 @@
-from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer
+from transformers import pipeline, set_seed
 
 
-def m2m100_translate(model_id: str, input_text: str, base_lang: str, target_lang: str):
-    model = M2M100ForConditionalGeneration.from_pretrained(model_id)
-    tokenizer = M2M100Tokenizer.from_pretrained(model_id)
+def text_to_text_generation(
+    prompt: str,
+    model_id: str,
+    device: str,
+    target_lang: str,
+):
 
-    base_lang = tokenizer.src_lang = base_lang
-    target_lang = tokenizer.get_lang_id(target_lang)
-    encoder = tokenizer(input_text, return_tensors="pt")
-    generated_tokens = model.generate(**encoder, forced_bos_token_id=target_lang)
-    output = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-    return output
+    pipe = pipeline(task="text2text-generation", model=model_id, device=device)
+    set_seed(42)
+    prediction = pipe(
+        prompt, 
+        max_length=200, 
+        num_return_sequences=1, 
+        forced_bos_token_id=pipe.tokenizer.get_lang_id(target_lang))[0]
+    
+    return prediction["generated_text"]
 
 
+if __name__ == "__main__":
+    text_output = text_to_text_generation(
+        prompt="Merhaba", model_id="facebook/m2m100_418M", device="cuda:0", target_lang="en")
 
-
-
+    print(text_output)
